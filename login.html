@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="mysite.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="w3-animate-right" id="content">
+  <img src="WTLOGO.png" height="80px" width="110px" style="float: right;">
+  <center><p style="font-size: 25px;letter-spacing: 20px;">Electronic Loan Management System</p></center>
+</div>
+<div class="content2">
+  <br><br>
+<div class="w3-animate-left"><p id="about">ELOMS IS AN ELECTRONIC LOAN MANAGEMENT SYSTEM TO EASILY MANAGE CLIENT  RECORDS AND DO ANALYSIS</p></div><br><br>
+
+ </div>
+ <div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="dashboard.html" name="loginForm" onsubmit="return validateForm(name)">
+    <span onclick="window.open('home.html','_self')" class="close" title="Close Modal" style="float: right;padding-right: 10px">&times;</span>
+    <div class="container">
+     <p align="left">UserId</p>
+  <input type="text" name="fname" placeholder="" pattern="^[A-Za-z0-9]*$" oninvalid="style='border-color:red;'" oninput="try{setCustomValidity('')}catch(e){};style='border-color:initial;'" required>
+  <p align="left" >Password</p>
+  <input type="password" name="password" placeholder="" oninvalid="style='border-color:red;'" oninput="try{setCustomValidity('')}catch(e){};style='border-color:initial;'" required>
+  <br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <a href="registration.html">New User</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="forgotpassword.html">Forgot Password</a><br><br>
+  <center><input type="submit" name="login" value="Login" id="myBtn"></center>
+    </div>
+  </form>
+</div>
+
+</div>
+<script>
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  var modal = document.getElementById('id01');
+    if (event.target == modal) {
+        window.open('main.html','_self');
+    }
+}
+</script>
+</body>
+</html>

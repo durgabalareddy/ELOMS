@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="mysite.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="w3-animate-right" id="content">
+  <img src="WTLOGO.png" height="80px" width="110px" style="float: right;">
+  <center><p style="font-size: 25px;letter-spacing: 20px;">Electronic Loan Management System</p></center>
+</div>
+<div class="content2">
+  <br><br>
+<div class="w3-animate-left"><p id="about">ELOMS IS AN ELECTRONIC LOAN MANAGEMENT SYSTEM TO EASILY MANAGE CLIENT  RECORDS AND DO ANALYSIS</p></div><br><br>
+<center><button id="myBtn" onclick="dis()">Login</button></center>
+ </div>
+ <div id="id02" class="modal">
+  
+<form class="modal-content animate" action="/action_page.php" name="registerForm" onsubmit="return validateForm(name)">
+    <span onclick="window.open('main.html','_self')" class="close" title="Close Modal" style="float: right;padding-right: 10px">&times;</span>
+    <div class="container">
+    <p align="left">First Name <span style="color: red">*</span></p>
+    <input type="firstname" name="firstname" pattern="^[a-zA-Z ]{2,30}$" oninvalid="setCustomValidity('please enter valid name');style='border-color:red;'" oninput="try{setCustomValidity('')}catch(e){};style='border-color:initial;'" required><br>
+  <p align="left">Last Name</p>
+  <input type="lastname" name="lastname" pattern="^[a-zA-Z ]{2,30}$" oninvalid="setCustomValidity('please enter valid name');style='border-color:red;'" oninput="try{setCustomValidity('')}catch(e){};style='border-color:initial;'">
+  <br>
+    <p align="left">Middle Name</p>
+  <input type="middlename" name="middlename" pattern="^[a-zA-Z ]{2,30}$" oninvalid="setCustomValidity('please enter valid name');style='border-color:red;'" oninput="try{setCustomValidity('')}catch(e){};style='border-color:initial;'">
+  <br>
+    <p align="left">Email Id <span style="color: red">*</span></</p>
+    <input type="Email" name="Email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" oninvalid="setCustomValidity('please enter valid email id');style='border-color:red;'" oninput="try{setCustomValidity('')}catch(e){};style='border-color:initial;'" required>
+    <br>
+  <p align="left">Password <span style="color: red">*</span></</p>
+  <input type="Password" name="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" oninvalid="setCustomValidity('Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters');style='border-color:red;'" oninput="try{setCustomValidity('')}catch(e){};style='border-color:initial;'" required>
+  <br>
+  <p align="left">Mobile No <span style="color: red">*</span></</p>
+  <input type="text" name="Mobile" pattern="^[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$" oninvalid="setCustomValidity('please enter valid Mobile number');style='border-color:red;'" oninput="try{setCustomValidity('')}catch(e){};style='border-color:initial;'" required>
+  <br><br>
+  <input type="radio" name="gender" required>
+  <a>Male&nbsp&nbsp&nbsp</a>
+  <input type="radio" name="gender" required>
+  <a>Female</a><br><br>
+  <input type="checkbox" name="terms and conditions" required>
+  <a>I agree to the Terms and Conditions</a>
+  <br
+  ><br>
+  
+  <center><input type="submit" name="submit" value="Register" id="myBtn"></center>
+    </div>
+  </form>
+</div>
+<script>
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  var modal = document.getElementById('id02');
+    if (event.target == modal) {
+        window.open('main.html','_self');
+    }
+}
+</script>
+</body>
+</html>
